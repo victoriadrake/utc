@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="See the current UTC time.">
+        <meta property="og:title" content="UTC Clock" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="See the current UTC time." />
+        <meta property="og:url" content="https://victoria.dev/utc/" />
+        <meta property="og:site_name" content="UTC Clock" />
+        <meta property="og:image" content="img/card.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="See the current UTC time." />
+        <meta name="twitter:image" content="img/card.webp" />
+        <meta name="twitter:description" content="See the current UTC time." />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+        <title>UTC Clock</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body onload="clock();">
+        <main aria-role="main">
+            <section class="hero flex col">
+
+                <h1 class="flex row" id="time">I find your lack of JS disturbing.</h1>
+
+            </section>
+            <footer class="flex col" id="footer">
+                <a href="https://victoria.dev">&#10157; Victoria Drake</a>
+            </footer>
+        </main>
+
+        <script type="text/javascript">
+            function clock() {
+                console.log("Turtles!");
+                var time = new Date;
+                var hrs = time.getUTCHours();
+                let min = time.getUTCMinutes();
+                let s = time.getUTCSeconds();
+                if (min < 10) {
+                    min = "0" + min
+                }
+                if (s < 10) {
+                    s = "0" + s
+                }
+                document.getElementById("time").innerHTML = '<span>' + hrs + ':</span><span>' + min + ':</span><span>' + s + '</span><span>&nbsp;UTC&nbsp;</span>';
+                setTimeout(clock, 1000);
+            }
+        </script>
+    </body>
+
+</html>

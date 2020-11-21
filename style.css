@@ -1,0 +1,191 @@
+/* 
+Based on Starter CSS Kit: https://github.com/victoriadrake/vsc-starter-snippets/
+One of many nanostartups by Victoria Drake
+*/
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-text-primary: #24292e;
+        --color-bg: white;
+        --shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px 0px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-primary: white;
+        --color-bg: #24292e;
+        --shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px 0px;
+    }
+}
+
+@media (min-width: 300px) {
+    :root {
+        --scale: 0.6;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --scale: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+    section {
+        width: 90%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --scale: 1.1;
+    }
+    section {
+        width: 100%;
+    }
+    .row {
+        flex-direction: row !important;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    word-wrap: break-word;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: x-locale-body, sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+    height: 90vh;
+}
+
+header, header div, nav, footer {
+    min-height: 4rem;
+    background-color: var(--color-bg);
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header>div {
+    max-width: 90rem;
+}
+
+main {
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    height: 100%;
+}
+
+a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #ccc;
+}
+
+#logo {
+    margin: 0 2rem;
+    font-size: calc(24px * var(--scale));
+    font-weight: 800;
+    justify-content: flex-start;
+}
+
+#logo img {
+    max-height: 2rem;
+    margin: 0 1rem 0 0;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+.row {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section {
+    margin: 0 auto;
+}
+
+section.hero {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.hero h1 {
+    font-size: calc(10rem * var(--scale));
+    margin: 0;
+    z-index: 1;
+    color: var(--color-text-primary);
+    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+h1 span {
+    margin: 0 auto;
+}
+
+.cta {
+    padding: 6rem 0 1rem 0;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-size: calc(26px * var(--scale));
+    margin: 0;
+}
+
+h3 {
+    font-size: calc(20px * var(--scale));
+    margin: 0;
+}
+
+footer {
+    font-size: 0.7rem;
+    position: sticky;
+    bottom: 0;
+}
