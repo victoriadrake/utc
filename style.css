@@ -159,10 +159,10 @@ section.hero {
 section.hero h1 {
     font-size: calc(10rem * var(--scale));
     margin: 0;
-    letter-spacing: 0.75rem;
+    letter-spacing: 1rem;
     z-index: 1;
     color: var(--color-text-primary);
-    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+    text-shadow: 1px 0px 0px #ccc, 0px 1px 0px #eee, 2px 1px 0px #ccc, 1px 2px 0px #eee, 3px 2px 0px #ccc, 2px 3px 0px #eee, 4px 3px 0px #ccc, 3px 4px 0px #eee, 5px 4px 0px #ccc, 4px 5px 0px #eee, 6px 5px 0px #ccc, 5px 6px 0px #eee, 7px 6px 0px #ccc;
 }
 
 h1 span {
@@ -187,6 +187,5 @@ h3 {
 
 footer {
     font-size: 0.7rem;
-    position: sticky;
     bottom: 0;
 }

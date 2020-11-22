@@ -47,6 +47,9 @@
                 var hrs = time.getUTCHours();
                 let min = time.getUTCMinutes();
                 let s = time.getUTCSeconds();
+                if (hrs < 10) {
+                    hrs = "0" + hrs
+                }
                 if (min < 10) {
                     min = "0" + min
                 }
