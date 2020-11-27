@@ -3,6 +3,11 @@ Based on Starter CSS Kit: https://github.com/victoriadrake/vsc-starter-snippets/
 One of many nanostartups by Victoria Drake
 */
 
+:root {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --color-text-primary: #24292e;
@@ -142,7 +147,7 @@ nav ul li {
     flex-direction: column;
 }
 .row {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 section {
@@ -154,6 +159,7 @@ section.hero {
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 90vw;
 }
 
 section.hero h1 {
