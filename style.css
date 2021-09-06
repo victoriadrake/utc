@@ -11,14 +11,14 @@ One of many nanostartups by Victoria Drake
 @media (prefers-color-scheme: light) {
     :root {
         --color-text-primary: #24292e;
-        --color-bg: white;
+        --color-bg: wheat;
         --shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px 0px;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-text-primary: white;
+        --color-text-primary: wheat;
         --color-bg: #24292e;
         --shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px 0px;
     }
